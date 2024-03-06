@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="timer">
+        <span id="minute">00</span>
+        :
+        <span id="second">00</span>
+    </div>
+
+    <div id="sound-container"></div>
+    <div id="backsound-toggle">
+        <i class="ri-volume-mute-fill"></i>
+    </div>
+
+    <div class="container" id="game-container">
+        <h2>Game</h2>
+
+        <div id="flip-card-game"></div>
+
+        <button id="reset-btn">Restart</button>
+    </div>
+</body>
+
+<script type="module" src="./js/index.js"></script>
+<script type="module" src="./js/scale.js"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyC96b9w2m10VmezNTT5eJdOCBlzuyaVM1k",
+        authDomain: "match-game-basic.firebaseapp.com",
+        projectId: "match-game-basic",
+        storageBucket: "match-game-basic.appspot.com",
+        messagingSenderId: "454483244404",
+        appId: "1:454483244404:web:e8538f49f7beb664e0e821",
+        measurementId: "G-LPGNYS4LEY"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+</html>

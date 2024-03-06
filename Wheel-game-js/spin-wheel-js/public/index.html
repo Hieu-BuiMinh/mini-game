@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Spin Wheel -->
+    <script src="https://cdn.jsdelivr.net/npm/spin-wheel@4.3.1/dist/spin-wheel-iife.js"></script>
+</head>
+
+<body>
+    <div id="sound-container"></div>
+    <div id="backsound-toggle">
+        <i class="ri-volume-mute-fill"></i>
+    </div>
+
+    <div class="wheel-wrapper" id="wheel-wrapper"></div>
+
+    <div style="display: flex; gap: 10px;">
+        <button id="spin-wheel-btn--win" class="spin-wheel-btn btn-win" type="button">WIN SPIN</button>
+        <button id="spin-wheel-btn--lose" class="spin-wheel-btn btn-lose" type="button">LOSE SPIN</button>
+    </div>
+</body>
+
+<script type="module" src="./js/index.js"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD1YQ293m7rCo8ZNdoK6AuVYbfm2KRhSx8",
+      authDomain: "spin-wheel-e1e07.firebaseapp.com",
+      projectId: "spin-wheel-e1e07",
+      storageBucket: "spin-wheel-e1e07.appspot.com",
+      messagingSenderId: "646869189868",
+      appId: "1:646869189868:web:c53cfc5806f191782f51c9",
+      measurementId: "G-T259EJH3HV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>

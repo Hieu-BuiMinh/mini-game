@@ -1,0 +1,9 @@
+.timer {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #FFFFFF;
+    font-size: 30px;
+}
