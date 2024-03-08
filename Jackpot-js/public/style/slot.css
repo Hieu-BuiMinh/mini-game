@@ -1,0 +1,66 @@
+.game-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-machine {
+  padding: 10px;
+
+  border: 3px solid #759eec;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: white;
+  overflow: hidden;
+}
+
+.slot-container .reel {
+  width: var(--item-width);
+  height: var(--item-height);
+  position: relative;
+}
+
+.reel .char-container {
+  position: absolute;
+  top: 0;
+}
+
+/* .reel .char-container {
+  animation: roll 6s cubic-bezier(.52, .1, .18, .91) forwards;
+  animation-delay: calc(var(--reel-num) * 0.3s);
+} */
+
+.char-container .dummy-char {
+  width: var(--item-width);
+  height: var(--item-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dummy-char img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(calc(-100% + var(--item-height)));
+  }
+}

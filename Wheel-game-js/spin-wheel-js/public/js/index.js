@@ -15,10 +15,10 @@ let backsoundElSound = null
 window.onload = () => {
 	const onMessageListener = async (event) => {
 		if (event?.data?.messageType === 'NEXT_JS_MESSAGE') {
-			console.log('index js log: ', event?.data)
+			console.log('index js log: ', event?.data?.data)
 			//// Next js init data here
-			originInitData = event?.data
-			await loadFonts(event?.data?.itemLabelFont)
+			originInitData = event?.data?.data
+			async () => await loadFonts(originInitData?.wheelConfig?.itemLabelFont)
 			init()
 			initSound()
 		}
@@ -26,10 +26,6 @@ window.onload = () => {
 
 	window.addEventListener('message', onMessageListener, false)
 
-	;async () => await loadFonts(prop.wheelConfig.itemLabelFont)
-	originInitData = prop
-	init()
-	initSound()
 }
 
 function init() {
@@ -38,7 +34,7 @@ function init() {
 	const spinButtonLose = document.getElementById('spin-wheel-btn--lose')
 
 	wheel.init({
-		...prop.wheelConfig,
+		...originInitData?.wheelConfig,
 		rotation: wheel.rotation,
 	})
 

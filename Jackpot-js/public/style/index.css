@@ -1,0 +1,62 @@
+@import "./slot.css";
+
+:root {
+  --item-width: 50px;
+  --item-height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+
+  background: no-repeat center;
+  background-image: url("../assets/img/bg-img.png");
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(81, 235, 81);
+  border: none;
+  outline: none;
+
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button#lose-btn {
+  background-color: rgb(235, 81, 81);
+}
+
+#backsound-toggle {
+  font-size: 25px;
+  color: #FFFFFF;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  i {
+    cursor: pointer;
+  }
+}

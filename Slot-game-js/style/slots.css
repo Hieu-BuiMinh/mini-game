@@ -1,0 +1,29 @@
+:root {
+  --icon-width: 79px;
+  --icon-height: 79px;
+}
+
+.slots {
+  width: calc(3.5 * var(--icon-width));
+  height: calc(3 * var(--icon-height));
+  padding: calc(0.3 * var(--icon-height));
+
+  border: 1px solid #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: white;
+}
+
+.reel{
+  width: var(--icon-width);
+  height: calc(3 * var(--icon-height));
+
+  border: 1px solid #333;
+
+  background-image: url("https://assets.codepen.io/439000/slotreel.webp");
+  background-repeat: repeat-y;
+  background-position: 0 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- remix icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="sound-container"></div>
+  <div id="backsound-toggle">
+    <i class="ri-volume-mute-fill"></i>
+  </div>
+
+  <div class="title">Choose your card!!!</div>
+
+  <div id="cards__wrapper">
+
+    <!-- <div class="sc__wrapper">
+      <div id="js--sc--container" class="sc__container"></div>
+      <div class="sc__infos"></div>
+    </div> -->
+
+  </div>
+
+</body>
+
+<script type="module" src="./js/index.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC-6ZzsizWQFOjq9tt3hu4_97XIb9QILjE",
+    authDomain: "scratch-card-699dd.firebaseapp.com",
+    projectId: "scratch-card-699dd",
+    storageBucket: "scratch-card-699dd.appspot.com",
+    messagingSenderId: "59043492563",
+    appId: "1:59043492563:web:d9d55856213cfc0dd05a26",
+    measurementId: "G-JQ8Q2YNKFW"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url('./card.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+
+  background: #FBDA61;
+  background: linear-gradient(45deg, #FBDA61, #FF5BCE);
+}
+
+.title {
+  font-size: 25px;
+}
+
+#backsound-toggle {
+  font-size: 25px;
+  color: #FFFFFF;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  i {
+    cursor: pointer;
+  }
+}

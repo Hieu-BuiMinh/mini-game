@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.sc__inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sc__wrapper {
+  display: block;
+  width: 100%;
+  height: 300px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.sc__container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  max-width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc__container>img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+
+  border: none;
+}
+
+.sc__container canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+
+  transform: translate(-50%, -50%);
+}
+
+.sc__infos {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#cards__wrapper {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  #cards__wrapper {
+    /* flex-direction: column; */
+  }
+
+  .sc__wrapper {
+    height: 250px;
+    max-width: 250px;
+  }
+
+  .sc__container {
+    height: 250px;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sc__wrapper {
+    height: 200px;
+    max-width: 200px;
+  }
+
+  .sc__container {
+    height: 200px;
+    max-width: 200px;
+  }
+}
