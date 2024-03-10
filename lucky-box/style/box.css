@@ -1,0 +1,52 @@
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, min(100px));
+    gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+
+    border: 1px dashed rgb(222, 73, 73);
+    border-radius: 10px;
+
+    padding: 8px;
+    cursor: pointer;
+}
+
+.box.active{
+    animation: box-shaking 0.25s linear infinite;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes box-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}

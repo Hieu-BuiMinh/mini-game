@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("./box.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh !important;
+    position: relative;
+    margin: auto;
+    
+    background: no-repeat center;
+    background-image: url("../assets/img/bg-img.png");
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
+}
+
+img {
+    object-fit: contain;
+}
+
+#backsound-toggle{
+    font-size: 25px;
+    color: #333;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    i{
+        cursor: pointer;
+    }
+}
