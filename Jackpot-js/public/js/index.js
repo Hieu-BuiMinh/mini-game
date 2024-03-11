@@ -122,12 +122,10 @@ const roll = (isWin) => {
 		if (isWin) {
 			onWinning()
       setTimeout(() => {
-        sendMessage(winningContent)
         initGame()
       }, 500);
 		} else {
       setTimeout(() => {
-        sendMessage(losingContent)
         initGame()
       }, 500);
 			onLosing()
@@ -172,7 +170,6 @@ const onWinning = () => {
 	confettiSoundPlay()
 	setTimeout(() => {
 		// alert('You Win')
-		console.log(winningContent)
 		sendMessage(winningContent)
 	}, 500)
 }
