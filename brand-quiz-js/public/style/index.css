@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("./drop-area.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  background: no-repeat center;
+  background-image: url("../assets/img/bg-img.png");
+
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+#reset-game {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 20px;
+}
+
+#backsound-toggle {
+  font-size: 25px;
+  color: #333;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  i {
+    cursor: pointer;
+  }
+}

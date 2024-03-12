@@ -1,0 +1,49 @@
+.drop-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  position: relative;
+}
+
+.drop-area .brand-drop {
+  text-align: center;
+}
+
+.img-dropzone {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+
+  border-radius: 10px;
+  border: 1px dashed #b8b8b8;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  border-radius: 10px;
+  border: 1px dashed #b8b8b8;
+  background-color: #ffffff;
+}
+
+.item-container img.item {
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+  opacity: 0.5;
+  z-index: 9;
+
+  touch-action: none;
+}
+
+.item-container img.item.draggable {
+  opacity: 1;
+}
