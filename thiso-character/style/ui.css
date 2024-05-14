@@ -1,0 +1,16 @@
+.character-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+	border: 1px dashed #aaa;
+	border-radius: 10px;
+}
+
+.bottom-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}

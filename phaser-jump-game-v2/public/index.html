@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/phaser.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+
+
+</body>
+<script type="module" src="./js/index.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAAdLyWN55dHPb6w8nTuSYtZhG3RBIZgts",
+        authDomain: "jump-v2.firebaseapp.com",
+        projectId: "jump-v2",
+        storageBucket: "jump-v2.appspot.com",
+        messagingSenderId: "856928423111",
+        appId: "1:856928423111:web:647d2482dc476772ac82e2",
+        measurementId: "G-X3V5G5MV9H"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+</html>
